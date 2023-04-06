@@ -8,7 +8,7 @@
     </settings>
     <typeAliases>
         <!--        mybatis에서 userDTO를 사용하면 자동으로 객체를 가져올수있도록 설정해놓은것-->
-        <typeAlias type="com.bit.carechart.model.UserDTO" alias="com.bit.carechart.model.UserDTO"/>
+        <typeAlias type="com.bit.carechart.model.UserDTO" alias="UserDTO"/>
 
     </typeAliases>
 <!--    <mappers>-->

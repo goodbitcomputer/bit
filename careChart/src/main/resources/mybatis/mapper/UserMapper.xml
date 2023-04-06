@@ -14,7 +14,8 @@
     <select id="selectAll" resultType="com.bit.carechart.model.UserDTO">
         SELECT * FROM user
     </select>
-    <update id="update" parameterType="userDTO">
+
+    <update id="update" parameterType="UserDTO">
         UPDATE `user` SET
         password = #{password},
         nickname = #{nickname},
