@@ -5,15 +5,16 @@
 
 <mapper namespace="mapper.UserMapper">
 
-    <select id="selectOne" parameterType="int" resultType="com.bit.carechart.model.UserDTO">
+    <select id="selectOne" parameterType="int" resultType="com.bit.carechart.model.MemberDTO">
         SELECT * FROM `user`
         WHERE id = #{id}
     </select>
 
 
-    <select id="selectAll" resultType="com.bit.carechart.model.UserDTO">
-        SELECT * FROM user
+    <select id="selectAll" resultType="com.bit.carechart.model.MemberDTO">
+        SELECT * FROM members
     </select>
+
     <update id="update" parameterType="userDTO">
         UPDATE `user` SET
         password = #{password},
