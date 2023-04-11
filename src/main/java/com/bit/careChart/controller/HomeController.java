@@ -29,7 +29,7 @@ public class HomeController implements ErrorController {
             System.out.println(u);
         }
 
-        return "index,html";
+        return "index.html";
 
 
 //        return "redirect:/mypage/showBasket";
@@ -38,9 +38,10 @@ public class HomeController implements ErrorController {
     @GetMapping("/login")
     public String getLoginForm() {
         System.out.println("로그인 페이지");
-        return "login.html";
+        return "index.html";
     }
 
+    /*
     @PostMapping("/doLogin")
     public String auth(HttpSession session, Model model, UserDTO attempt) {
         UserDTO result = userService.auth(attempt);
@@ -52,9 +53,11 @@ public class HomeController implements ErrorController {
         } else {
             model.addAttribute("message", "로그인 정보를 다시 확인해주세요.");
             System.out.println("Log In Fail");
-            return "login.html";
+            return "redirect:/login";
         }
     }
+
+     */
 
     public String getErrorPath() {
         return "/error";
