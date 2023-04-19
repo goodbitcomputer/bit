@@ -1,9 +1,7 @@
 <template>
   <div class="protected" v-if="loginSuccess">
-    <h1>
-      <v-badge variant="success">보안 사이트에 대한 액세스가 허용되었습니다</v-badge>
-    </h1>
     <h5>로그인 성공!</h5>
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
   <div class="unprotected" v-else-if="loginError">
     <h1>
@@ -32,9 +30,13 @@
 
 <script>
 import axios from 'axios'
+import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'LogIn',
+  components: {
+    HelloWorld
+  },
   data() {
     return {
       loginSuccess: false,

@@ -1,0 +1,23 @@
+{
+  "name": "bit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "vuex": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goodbitcomputer/bit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goodbitcomputer/bit/issues"
+  },
+  "homepage": "https://github.com/goodbitcomputer/bit#readme"
+}
